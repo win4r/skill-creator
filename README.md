@@ -24,6 +24,19 @@ skill-creator/
 └── LICENSE.txt
 ```
 
+## Key Improvements Over the Original
+
+This is a fork of Anthropic's official `skill-creator` with the following upgrades:
+
+| Area | Before | After |
+|------|--------|-------|
+| **Context cost** | 263 lines (~4,000 tokens) loaded every invocation, including 75 lines of background material rarely needed | 147 lines (~1,800 tokens) — background extracted to `references/skill-anatomy.md`, loaded on demand (**-56%**) |
+| **Quick Reference** | None — had to read 200+ lines to understand the process | Table at the top with all 6 steps, purpose, and skip conditions |
+| **Script paths** | Relative (`scripts/init_skill.py`) — LLM had to guess absolute path | Absolute (`~/.claude/skills/skill-creator/scripts/init_skill.py`) — copy-paste ready |
+| **Name validation** | `init_skill.py` accepted invalid names (spaces, uppercase) — created skills that immediately failed validation | Validates before creating: regex, hyphen boundaries, length. Provides a suggested fix |
+| **Optimization Principles** | Not present | 5 numbered principles + a pre-ship checklist, derived from production optimization of [win4r/dev-skill](https://github.com/win4r/dev-skill) |
+| **Self-consistency** | Violated its own best practices (description over 120 chars, no quick reference table) | Follows all of its own Optimization Principles |
+
 ## Skill Creation Process
 
 | Step | What | Output |
