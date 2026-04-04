@@ -14,12 +14,14 @@ Then describe the skill you want to build. The skill walks you through understan
 
 ```
 skill-creator/
-├── SKILL.md              ← Skill creation guide + optimization principles
-├── LICENSE.txt            ← License terms
-└── scripts/
-    ├── init_skill.py     ← Scaffold a new skill directory
-    ├── package_skill.py  ← Validate and package a skill as .zip
-    └── quick_validate.py ← Fast validation of skill structure
+├── SKILL.md              ← Lean router: creation process + optimization principles
+├── references/
+│   └── skill-anatomy.md  ← Background: skill structure, bundled resources, progressive disclosure
+├── scripts/
+│   ├── init_skill.py     ← Scaffold a new skill directory
+│   ├── package_skill.py  ← Validate and package a skill as .zip
+│   └── quick_validate.py ← Fast validation of skill structure
+└── LICENSE.txt
 ```
 
 ## Skill Creation Process
