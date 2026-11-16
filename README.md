@@ -1,3 +1,5 @@
+# [🚀观看我的哔哩哔哩视频](https://space.bilibili.com/3493277319825652)
+
 # /skill-creator — Claude Code Skill Design Guide
 
 A Claude Code skill for creating and optimizing other Claude Code skills. Provides a 6-step creation process, bundled scaffolding scripts, and optimization principles for building production-quality skills.
